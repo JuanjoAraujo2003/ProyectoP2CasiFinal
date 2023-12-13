@@ -21,7 +21,7 @@ public partial class Contacto : ContentPage
 
     public void MostrarContacto(string direccion, string email, string telefono)
     {
-        lblName.Text = $"Direccion: {direccion}";
+        lblDireccion.Text = $"Direccion: {direccion}";
         lblEmail.Text = $"Email: {email}";
         lblPhone.Text = $"Teléfono: {telefono}";
     }

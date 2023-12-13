@@ -2,18 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoP2Final.Views.Contacto"
-             Title="Información de contacto"
-             BackgroundImageSource="tuki.jpg"
-             Opacity="1.5">
-    
+             Title="Información de contacto">
 
-    <StackLayout>
-        <Label Text="Nuestra informacion de contacto" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,10"/>
-        <Label x:Name="lblName" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
-        <Label x:Name="lblEmail" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
-        <Label x:Name="lblPhone" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
-        <Button Text="Mostrar Informacion" Clicked="OnShowContactClicked" x:Name="btnMostrarContacto" />
-  
-    </StackLayout>
+    <Grid>
+        <Image Source="habitacion.jpg" Aspect="AspectFill"/>
+       
+        <StackLayout BackgroundColor="#80000000" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Nuestra información de contacto" FontSize="Large" TextColor="White" HorizontalOptions="Center"/>
+            <Label x:Name="lblDireccion" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="lblEmail" FontSize="Medium" TextColor="White" HorizontalOptions="Center"/>
+            <Label x:Name="lblPhone" FontSize="Medium" TextColor="White" HorizontalOptions="Center"/>
+            <Button Text="Mostrar Información" Clicked="OnShowContactClicked" x:Name="btnMostrarContacto" HorizontalOptions="Center"/>
+        </StackLayout>
+    </Grid>
 
 </ContentPage>
