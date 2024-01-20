@@ -19,6 +19,13 @@
         <DatePicker Date="{Binding ReservaDto.FechaEntrada}" Margin="0,0,0,10"/>
         <Label Text="Fecha Salida"/>
         <DatePicker Date="{Binding ReservaDto.FechaSalida}" Margin="0,0,0,10"/>
+        <Label Text="Seleccione una sede" />
+        <Picker x:Name="pkSede" Title="Seleccione uno" >
+            <Picker.Items>
+                <x:String>San Francisco</x:String>
+                <x:String>Chicago</x:String>
+            </Picker.Items>
+        </Picker>
         <Button Text="Guardar" Command="{Binding GuardarCommand}" BackgroundColor="Aqua"/>
 
     </VerticalStackLayout>

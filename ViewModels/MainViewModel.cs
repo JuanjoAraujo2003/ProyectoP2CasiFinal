@@ -43,7 +43,8 @@ namespace ProyectoP2Final.ViewModels
                         Cedula=item.Cedula,
                         NumeroHuespedes=item.NumeroHuespedes,
                         FechaEntrada=item.FechaEntrada,
-                        FechaSalida=item.FechaSalida,   
+                        FechaSalida=item.FechaSalida,
+                        Sede=item.Sede,
                     });
                 }
             }
@@ -65,6 +66,7 @@ namespace ProyectoP2Final.ViewModels
                 encontrado.NumeroHuespedes= reservaDto.NumeroHuespedes;
                 encontrado.FechaEntrada= reservaDto.FechaEntrada;
                 encontrado.FechaSalida= reservaDto.FechaSalida;
+                encontrado.Sede= reservaDto.Sede;
 
             }
         }

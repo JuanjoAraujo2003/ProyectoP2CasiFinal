@@ -11,5 +11,6 @@ namespace ProyectoP2Final.Models
         public int NumeroHuespedes { get; set; }
         public DateTime FechaEntrada { get; set; }
         public DateTime FechaSalida { get; set; }
+        public string Sede { get; set; }
     }
 }

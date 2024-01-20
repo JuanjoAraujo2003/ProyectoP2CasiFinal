@@ -17,5 +17,8 @@ namespace ProyectoP2Final.DTOs
         public DateTime fechaEntrada;
         [ObservableProperty]
         public DateTime fechaSalida;
+        [ObservableProperty]
+        public string sede;
+        
     }
 }
