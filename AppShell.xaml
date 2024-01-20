@@ -22,6 +22,10 @@
         Title="Informacion de contacto"
         ContentTemplate="{DataTemplate views:Contacto}"
        />
+    <ShellContent
+        Title="Ciudades de hoteles"
+        ContentTemplate="{DataTemplate views:ApiCiudades}"
+       />
 
 
 </Shell>

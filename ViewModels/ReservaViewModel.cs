@@ -49,6 +49,7 @@ namespace ProyectoP2Final.ViewModels
                     ReservaDto.NumeroHuespedes = encontrado.NumeroHuespedes;
                     ReservaDto.FechaEntrada = encontrado.FechaEntrada;
                     ReservaDto.FechaSalida = encontrado.FechaSalida;
+                    
 
                     MainThread.BeginInvokeOnMainThread(() => { LoadingEsVisible = false; });
                 });
@@ -71,6 +72,7 @@ namespace ProyectoP2Final.ViewModels
                         NumeroHuespedes = ReservaDto.NumeroHuespedes,
                         FechaEntrada = ReservaDto.FechaEntrada,
                         FechaSalida = ReservaDto.FechaSalida,
+                        
                     };    
                     _dbContext.Reservas.Add(tbReserva);
                     await _dbContext.SaveChangesAsync();
